@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Fondo principal con degradado lineal */
+  background: linear-gradient(180deg, #2a0144 0%, #3a0266 50%, #4b0186 100%);
+
+  /* Glow radial al centro (imitando la luz detrás del logo) */
+  background-image: 
+    radial-gradient(circle at center top, rgba(114, 0, 255, 0.6) 0%, transparent 70%),
+    linear-gradient(180deg, #2a0144 0%, #3a0266 50%, #4b0186 100%);
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+/* esto es para darle la forma al cuadrado */
+form {
+ background: transparent;/* ara que el form sea trasparente si no quedara feoito*/
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 5px 100px;
+  /* esto es para el largo y el ancho de los cuadros */
+  margin-bottom: 2px;
+  /* la distancia de las cosas*/
+  border: 1px solid #ccc;
+  /* le da un bordado especial */
+  border-radius: 5px;
+  /* para hacer redondo las esquinas del texto  */
+  box-sizing: border-box;
+  font-size: 14px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #05a4d8;
+  border: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+label {
+  display: block;
+  text-align: left;
+  margin-left: 60px 100px;/* la primero es para las distancia entre las lineas y lo segundo es el largo de las lineas  */
+  font-size: 14px;/* el tamaño */
+  color: white; 
+  font-weight: bold;
+}
+a {/* para crear el enlace */
+  display: block;
+  margin: 6px 0;/* la distancia entre ellos */
+  display: block;
+  font-size: 14px;
+  color: #c7c7c7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* el texto de la o de separacion  */
+.separator {
+  color: white;
+  margin: 3px 0;/* la separacion entre ellos */
+  font-weight: bold;
+}
+
+.mensajeError {
+  color: red;
+  font-size: 12px; /* el tamaño de las letras del error*/
+  margin-bottom: 10px; /* la separacion entre el boton*/
+  min-height: 3px; /* la separacion del recuadro y donde escrivira el error */
+  /* espacio reservado */
+}
+
+.logo {
+
+  width: 320px;
+  
+
+}
+
