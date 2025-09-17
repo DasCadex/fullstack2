@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="registro.css">
+</head>
+
+<body>
+
+    <div class="contenedor-form">
+        <form id="registroForm" novalidate>
+            <img src="logo.png" alt="PixelHub" class="logo">
+
+            <div class="form-input usuario">
+                <label for="usuario">Nombre de usuario</label>
+                <input type="text" id="usuario" name="usuario">
+                <p class="mensajeError"></p>
+            </div>
+
+            <div class="form-input correo">
+                <label for="correo">Correo electrónico</label>
+                <input type="text" id="correo" name="correo">
+                <p class="mensajeError"></p>
+            </div>
+
+            <div class="form-input contrasena">
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="contrasena" name="contrasena">
+                <p class="mensajeError"></p>
+            </div>
+
+            <div class="form-input confirmar-contrasena">
+                <label for="confirmarContrasena">Confirmar contraseña</label>
+                <input type="password" id="confirmarContrasena" name="confirmarContrasena">
+                <p class="mensajeError"></p>
+            </div>
+
+            <button type="submit">Registrarse</button>
+            <div class="separator">O</div>
+            <a href="InicioSesion.html">¿Ya tienes una cuenta? Inicia sesión</a>
+        </form>
+    </div>
+
+    <script src="Registro.js"></script>
+</body>
+
+</html>

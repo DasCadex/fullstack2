@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Principla.css">
+</head>
+
+<body>
+    <!-- este sera el unicamente el navar -->
+    <nav class="navbar navbar-expand-lg mi-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white fw-bold" href="#">PixelHub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                     <!-- Estos son los botones de la parte superiror que son parte del navbar -->
+                    <li class="nav-item"><a class="nav-link active text-white" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Cuenta</a></li>
+                    <li class="nav-item dropdown">
+                        <!-- Consto desplegamo el menu con opciones -->
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                            Categorías
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <!-- estas son las opciones del meno a deplegar -->
+                            <li><a class="dropdown-item" href="#">Shooter</a></li>
+                            <li><a class="dropdown-item" href="#">RPG</a></li>
+                            <li><a class="dropdown-item" href="#">Indie</a></li>
+                            <li><a class="dropdown-item" href="#">Noticias</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex ms-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--  en esta parte teremia el nabvar -->
+
+
+    <!-- Contenedor principla que con el mt-4 le indicaremos el orden de las columnas por asi decirlo -->
+    <main class="container mt-4">
+        <h2 class="text-white mb-4">PixelHub</h2>
+        <!-- estan son las petañasque se seleciona la categorias  -->
+        <ul class="nav nav-pills mb-4">
+            <!-- usamos el mb 4 para que esten ordenado en linea y tengas una separacion con las tarjetas (publicaciones )-->
+            <li class="nav-item"><a class="nav-link active" href="#">Shooter</a></li>
+            <li class="nav-item"><a class="nav-link " href="#">RPG</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Indie</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Retro</a></li>
+        </ul>
+
+        <!-- tarjetas las usamos para hacer la previlisuacion de la publicacion  -->
+        <div class="card custom-card mb-3">
+            <!-- usamos mb 3 para que esten ordenando en fila y tengas separacion entre ellas -->
+            <div class="card-body"><!-- cuerpo de la carta para depues asignarle un estilo -->
+                <h5 class="card-title">Best FPS games of 2024</h5>
+                <p class="card-text ">John Doe</p>
+                <img  class="img-top"src="https://media.revistagq.com/photos/63e9f744df9a2fddd35517c5/16:9/w_2560%2Cc_limit/resident-evil-4-remake.jpeg "style="width: 18rem">
+                <div class="d-flex justify-content-between text-secondary">
+                    <span>👍 42</span><!--los like que tendra -->
+                    <span>💬 12</span>
+                    <span>🔖</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card custom-card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Indie gems you should try</h5>
+                <p class="card-text ">Sarah</p>
+                <img  class="img-top"src="https://media.revistagq.com/photos/63e9f744df9a2fddd35517c5/16:9/w_2560%2Cc_limit/resident-evil-4-remake.jpeg "style="width: 18rem">
+                <div class="d-flex justify-content-between text-secondary">
+                    <span>👍 35</span>
+                    <span>💬 9</span>
+                    <span>🔖</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card custom-card mb-3">
+            <div class="card-body">
+                
+                <h5 class="card-title">Latest gaming news</h5>
+                
+                <p class="card-text ">Mike</p>
+                <img  class="img-top"src="https://media.revistagq.com/photos/63e9f744df9a2fddd35517c5/16:9/w_2560%2Cc_limit/resident-evil-4-remake.jpeg "style="width: 18rem">
+
+                
+                <div class="d-flex justify-content-between text-secondary">
+                    <span>👍 28</span>
+                    <span>💬 5</span>
+                    <span>🔖</span>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
