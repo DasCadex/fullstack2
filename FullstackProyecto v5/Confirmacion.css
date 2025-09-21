@@ -1,0 +1,134 @@
+/* ===== Fondo general ===== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: 
+    radial-gradient(circle at center top, rgba(114, 0, 255, 0.6) 0%, transparent 70%),
+    linear-gradient(180deg, #2a0144 0%, #3a0266 50%, #4b0186 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+.mi-navbar {
+  position: fixed;       /* siempre pegado */
+  top: 0;               /* en la parte superior */
+  left: 0;
+  width: 100%;          /* que ocupe todo el ancho */
+  z-index: 100;        /* para que quede sobre los demás elementos */
+  background-color: rgba(20, 20, 40, 0.95); /* fondo oscuro */
+  padding: 0.8rem 1.5rem;
+  border-radius: 0 0 15px 15px; /* redondeado solo abajo */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+/* el estilo de las petañas */
+.nav-pills .nav-link {/* le daremos estilo a las letras de las pestañas y color */
+  color: #ccc;/*color de las letras */
+  border-radius: 20px;/* para darle bordes redondos */
+  font-weight: bold;
+}
+
+.nav-pills .nav-link.active {/* cuando este seleccionada una petaña con esto le indicamos que sea de color azul y que sus letras sean negras */
+  background-color: #00cfff; 
+  color: #000;
+}
+
+.navbar-wrapper {
+  background-color: rgba(20, 20, 40, 0.85); /* Oscuro con transparencia */
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+/* ===== Contenedor central ===== */
+.container {
+    margin-top: 10rem; /* deja espacio debajo del navbar */
+  max-width: 500px;
+  width: 100%;
+  background: rgba(15, 15, 30, 0.85); /* Fondo del principak bloque de container  */
+  padding: 25px 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  text-align: center;
+}
+
+/* ===== Título ===== */
+h2 {
+  color: #00cfff;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px rgba(0, 207, 255, 0.7);/* Fpara que tenga un resalte de brtillo */
+}
+
+/* ===== Resultado ===== */
+.resultado-box {
+  text-align: left;
+  background: rgba(73, 20, 133, 0.6);/* fondo del resultado box  segudno container  */
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.resultado-box p {/* color de las ñetras */
+  margin: 10px 0;
+  font-size: 15px;
+  color: #e0e0e0;
+}
+
+.resultado-box b {
+  color: #ff00d4;/* color de las ñetras */
+}
+
+/* ===== Imagen ===== */
+.imagen-box {
+  text-align: center;/* para que este centrada */
+  margin-top: 15px;
+}
+
+.imagen-box img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.5), 0 0 12px rgba(0, 207, 255, 0.6);
+  border: 2px solid #00cfff;
+}
+
+/* ===== Botón volver ===== */
+.btn {
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.volver {
+  background: linear-gradient(90deg, #00cfff, #ff00d4);
+  color: #111;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.volver:hover {
+  background: linear-gradient(90deg, #ff00d4, #00cfff);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+}
+

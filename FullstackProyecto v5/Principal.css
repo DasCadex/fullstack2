@@ -1,0 +1,141 @@
+/* Fondo degradado como la imagen */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+
+
+  background-image: 
+    radial-gradient(circle at center top, rgba(114, 0, 255, 0.6) 0%, transparent 70%),
+    linear-gradient(180deg, #2a0144 0%, #3a0266 50%, #4b0186 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* que personalizaremos  y lo dejamos trasparente para que adote el color del fondo  */
+.mi-navbar {
+  background-color: transparent;
+}
+
+/* el estilo de las petañas */
+.nav-pills .nav-link {/* le daremos estilo a las letras de las pestañas y color */
+  color: #ccc;/*color de las letras */
+  border-radius: 20px;/* para darle bordes redondos */
+  font-weight: bold;
+}
+
+.nav-pills .nav-link.active {/* cuando este seleccionada una petaña con esto le indicamos que sea de color azul y que sus letras sean negras */
+  background-color: #00cfff; 
+  color: #000;
+}
+
+/* le damos estilo a las tarjetas */
+.custom-card {
+  background-color: #1a1a2e; /* el color del fondo de la tarjeta */
+  border: none; /* el borde*/
+  border-radius: 12px;/* cuanto vamos a redondear la tarjeta */
+  color: white;/* color del titulo de la publicacion */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para las tarjetas */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación de transformación y sombra */
+}
+
+/*animacion*/
+.custom-card:hover {
+  transform: translateY(-5px); /* Efecto al pasar el ratón */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Sombra más intensa */
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+/* Ajuste de texto */
+.card-text {
+  font-size: 14px;
+}
+
+h2 {
+  font-weight: bold;
+}
+.img-top{
+  border-radius: 12px;
+}
+
+/* Contenedor con fondo oscuro para los hilos */
+.hilos-wrapper {
+  background-color: rgba(10, 10, 20, 0.85); /* Fondo oscuro con un poco de transparencia */
+  padding: 2rem 1rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra para destacarlo */
+  margin-top: 2rem;
+}
+
+.navbar-wrapper {
+  background-color: rgba(20, 20, 40, 0.85); /* Oscuro con transparencia */
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.main-wrapper {
+  border: 2px solid rgba(255, 255, 255, 0.1); /* Borde sutil claro */
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  background-color: transparent; /* Deja ver el fondo degradado */
+  backdrop-filter: blur(4px); /* Opcional: difumina el fondo detrás */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); /* Sombra para destacarlo */
+}
+
+.btn-custom {
+  background-color: #f305df; /* cian */
+  color: #111111; /* texto negro */
+  font-weight: bold;
+  border-radius: 25px; /* bordes muy redondeados */
+  padding: 0.4rem 1.2rem;
+  border: 2px solid #007a99; /* borde oscuro para contraste */
+  box-shadow: 0 4px 6px rgba(0, 122, 153, 0.4); /* sombra sutil */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #e6ff05; /* un poco más oscuro al pasar el mouse */
+  color: #000;
+}
+
+.modal-content.custom-modal {
+  background-color: rgba(73, 20, 133, 0.726); /* fondo oscuro casi opaco */
+  color: white;
+  border-radius: 8px;
+  border: none;
+}
+
+.modal-header.custom-modal-header {
+  border-bottom: 1px solid #2e055046;
+}
+
+.modal-body label {
+  color: white;
+}
+
+.form-control, .form-select {
+  background-color: #ffffff;
+  color: rgb(112, 112, 112);
+  border: 2px solid #0011ff;
+}
+
+.form-control::placeholder {
+  color: #bbb;
+}
+
+.form-control:focus, .form-select:focus {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-color: #00cfff;
+  box-shadow: 0 0 5px #00cfff;
+}
+
+
